@@ -1,0 +1,126 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-image: url('https://img.freepik.com/vetores-gratis/fundo-branco-abstrato_23-2148810113.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696464000&semt=ais');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  scroll-behavior: smooth;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.container img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.container img:hover{
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  color: #000000;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #858080;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #333;
+  transform: scale(1.1);
+}
+
+section {
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tela-formacao,
+.tela-interesses,
+.tela-contato {
+  background-color: #f5f5f5;
+}
+
+.tela-formacao ul,
+.tela-habilidades ul,
+.tela-leituras ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tela-formacao li,
+.tela-habilidades li,
+.tela-leituras li {
+  margin-bottom: 20px;
+}
+
+.tela-formacao li strong,
+.tela-habilidades li strong,
+.tela-leituras li strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tela-formacao li p,
+.tela-habilidades li p,
+.tela-leituras li p {
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
