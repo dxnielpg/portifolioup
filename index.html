@@ -6,9 +6,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
-    <title>Seu Nome - Portfólio</title>
+    <title>Daniel Pereira Gonçalves de Oliveira - Portfólio</title>
 </head>
 <body>
+
+    <!-- Página de Introdução -->
+    <section id="intro" class="full-screen">
+        <div class="intro-container">
+            <img src="danielpgo.jpg" alt="Daniel Pereira" class="profile-pic">
+            <h1>Daniel Pereira Gonçalves de Oliveira</h1>
+            <a href="#informacoes-basicas" class="btn-intro">Ver Portfólio</a>
+        </div>
+    </section>
 
     <!-- Header -->
     <header>
@@ -20,87 +29,77 @@
                     <li><a href="#formacao">Formação</a></li>
                     <li><a href="#experiencia">Experiência</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#interesses">Interesses e Hobbies</a></li>
-                    <li><a href="#leituras">Leituras</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Seção Informações Básicas -->
-    <section id="informacoes-basicas" class="tela-informacoes">
+    <section id="informacoes-basicas">
         <div class="container">
             <h2>Informações Básicas</h2>
-            <img src="data:image/png;base64,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">
-            <p>Nome: Daniel Pereira Gonçalves de Oliveira</p>
-            <p>Desenvolvedor Web em aprendizado</p>
+            <p><strong>Nome:</strong> Daniel Pereira Gonçalves de Oliveira</p>
+            <p><strong>Data de Nascimento:</strong> 12/04/2004</p>
+            <p><strong>Estado Civil:</strong> Solteiro</p>
+            <p><strong>Nacionalidade:</strong> Brasileiro</p>
+            <p><strong>Endereço:</strong> Água Verde, Curitiba - PR</p>
+            <p><strong>Telefone:</strong> (41) 99845-2596</p>
+            <p><strong>Email:</strong> danielpgo11@gmail.com</p>
         </div>
     </section>
 
-    <!-- Seção Formação Acadêmica -->
-    <section id="formacao" class="tela-formacao">
+    <section id="formacao">
         <div class="container">
-            <h2>Formação Acadêmica</h2>
-            <ul>
-                <li>Graduação em Análise e Desenvolvimento de Sistemas - Universidade Positivo (Conclusão 12/2024)</li>
-                <li>Ensino Médio - Colégio Estadual Pedro Macedo (Concluído)</li>
-            </ul>
+            <h2>Formação</h2>
+            <p><strong>03/2023 - Cursando(Conclusão 12/2024):</strong> Tecnólogo em Análise e Desenvolvimento de Sistemas - Universidade Positivo</p>
         </div>
     </section>
 
-    <!-- ... (seções existentes) ... -->
+    <section id="experiencia">
+        <div class="container">
+            <h2>Experiência Profissional</h2>
+            <div class="experiencia-item">
+                <h3>Recenseador - IBGE</h3>
+                <p><strong>Período:</strong> Julho de 2022 - Novembro de 2022</p>
+                <ul>
+                    <li>Responsável por realizar entrevistas domiciliares e coletar dados essenciais para o Censo Demográfico.</li>
+                    <br>
+                    <li>Registro de informações detalhadas sobre população e habitação, assegurando precisão e confiabilidade.</li>
+                    <br>
+                    <li>Comunicação e empatia ao interagir com pessoas de diversas origens.</li>
+                    <br>
+                    <li>Organização de cronograma de visitas para maximizar a eficiência e cumprir prazos.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <!-- Seção Habilidades -->
-    <section id="habilidades" class="tela-habilidades">
+    <section id="habilidades">
         <div class="container">
             <h2>Habilidades</h2>
             <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Familiaridade com sistemas operacionais, como Windows e Linux</li>
-                <li>Boa comunicação verbal e escrita</li>
-                <li>Linguagem de programação em C</li>
-                <li>Inglês Básico</li>
-                <li>Habilidades Interpessoais: Trabalho em Equipe, Comunicação</li>
+                <li>Ferramentas de BI: Power BI, Google Data Studio</li>
+                <li>SQL (Avançado)</li>
+                <li>Pentaho Data Integration (PDI)</li>
+                <li>Programação em Java, C#</li>
+                <li>Pacote Office (Excel Avançado)</li>
             </ul>
         </div>
     </section>
 
-    <!-- Seção Interesses e Hobbies -->
-    <section id="interesses" class="tela-interesses">
+    <section id="contato">
         <div class="container">
-            <h2>Interesses e Hobbies</h2>
-            <p>Gosto de Chopp, Futebol, dormir.</p>
+            <h2>Contato</h2>
+            <p><strong>Email:</strong> danielpgo11@gmail.com</p>
+            <p><strong>Telefone WhatsApp:</strong> (41) 99845-2596</p>
         </div>
     </section>
-
-    <!-- Seção Leituras -->
-    <section id="leituras" class="tela-leituras">
-        <div class="container">
-            <h2>Leituras Recomendadas</h2>
-            <ul>
-                <li>"Menino do pijama listrado"</li>
-                <li>"Tower of God"</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Seção Contato -->
-    <section id="contato" class="tela-contato">
-        <div class="container">
-            <h2>Contatos</h2>
-            <p>danielpgo11@gmail.com. - (41) 99845-2596</p>
-        </div>
-    </section>
-
-    <!-- ... (seções existentes) ... -->
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 DANIEL PEREIRA GONÇALVES DE OLIVEIRA.</p>
+            <p>&copy; 2024 Daniel Pereira Gonçalves de Oliveira.</p>
         </div>
     </footer>
 
-    <script src="script_portifolio.js"></script>
 </body>
 </html>
